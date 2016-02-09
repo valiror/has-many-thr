@@ -1,0 +1,25 @@
+development:  
+  adapter: postgresql
+  encoding: unicode  
+  pool: 5  
+  database: has-many-thr_development 
+  username: pguser 
+  password: root
+  host: localhost 
+  port: 5432
+
+  
+test:
+  database: has-many-thr_test
+  adapter: postgresql
+  encoding: unicode  
+  pool: 5  
+  username: pguser  
+  password: root
+  host: localhost 
+  port: 5432 
+
+production:
+  database: has-many-thr_production
+  username: has-many-thr
+  password: <%= ENV['HAS-MANY-THR_DATABASE_PASSWORD'] %>
